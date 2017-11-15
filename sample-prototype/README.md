@@ -11,12 +11,10 @@ And Generate Report using Extent
 
 Sample test report are attached under src/test/resources for reference.
 
-http://htmlpreview.github.io/?https://github.com/Naznee/Selenium/blob/master/nazneen-selenium-prototype/src/test/resources/GoogleExtentReport.html
+http://htmlpreview.github.io/?https://github.com/Naznee/Selenium/blob/master/sample-prototype/src/test/resources/GoogleExtentReport.html
 
 Prerequisites
 1. Eclipse 
 2. JDK 1.8 
 3. Maven and Git Plugin in Eclipse
-4. ChromeDriver, Dowloaded from https://sites.google.com/a/chromium.org/chromedriver/downloads
-5. Chrome Driver set in Environment variable properties as "webdriver.chrome.driver"
  

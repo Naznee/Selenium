@@ -53,9 +53,11 @@ public class TestGoogleSearch {
 
 	private static ExtentReports EXTENT;
 
-	private static final String userPath = System.getProperty("user.dir") + "/test-output/";
+	private static final String userDir = System.getProperty("user.dir");
 
-	private static final String screenShotPath = System.getProperty("user.dir") + "/test-output/ScreenShot/";
+	private static final String userPath = userDir + "/test-output/";
+
+	private static final String screenShotPath = userDir + "/test-output/ScreenShot/";
 
 	@Parameters(name = "{0}")
 	public static Collection<Object[]> input() {
@@ -104,6 +106,7 @@ public class TestGoogleSearch {
 		}
 
 		// Initialize chrome Driver.
+		System.setProperty("webdriver.chrome.driver", userDir+"/chromedriver/chromedriver.exe");
 		DRIVER = new ChromeDriver();
 
 		// Setting up report
