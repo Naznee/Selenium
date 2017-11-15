@@ -10,3 +10,11 @@ And Generate Report using Extent
 3. Status of Test log using test watcher.
 
 Sample test report are attached under src/test/resources for reference.
+
+Prerequisites
+1. Eclipse 
+2. JDK 1.8 
+3. Maven and Git Plugin in Eclipse
+4. ChromeDriver, Dowloaded from https://sites.google.com/a/chromium.org/chromedriver/downloads
+5. Chrome Driver set in Environment variable properties as "webdriver.chrome.driver"
+ 

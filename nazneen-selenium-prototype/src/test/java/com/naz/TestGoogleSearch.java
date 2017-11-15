@@ -32,16 +32,14 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 /**
- * Test Given Search value in Google and assert Right hand side Title Values. 
+ * Test Given Search value in Google and assert Right hand side Title Values.
  * 
- * 1. input = Junit Test, expected = Unit testing, status = pass
- * 2. input = Womens day, expected = Woman's Day Fail Test For report, status = fail
- * 3. input = Fathers Day, expected = Father, status = pass
+ * 1. input = Junit Test, expected = Unit testing, status = pass 2. input =
+ * Womens day, expected = Woman's Day Fail Test For report, status = fail 3.
+ * input = Fathers Day, expected = Father, status = pass
  * 
- * And Generate Report using Extent 
- * 1. Start of test log
- * 2. capture of Screenshot after search in google
- * 3. Status of Test log using test watcher.
+ * And Generate Report using Extent 1. Start of test log 2. capture of
+ * Screenshot after search in google 3. Status of Test log using test watcher.
  * 
  * Sample test report are attached under src/test/resources for reference.
  * 
@@ -65,7 +63,7 @@ public class TestGoogleSearch {
 		return Arrays.asList(new Object[][] { { "Junit Test", "Unit testing" },
 				{ "Womens day", "Woman's Day Fail Test For report" }, { "Fathers Day", "Father" } });
 	}
-	
+
 	private ExtentTest testReport;
 
 	@Parameter(0)
@@ -105,9 +103,7 @@ public class TestGoogleSearch {
 			FileUtils.cleanDirectory(reportPath);
 		}
 
-		// Setting up Driver
-		System.setProperty("webdriver.chrome.driver",
-				"C://Users//Riyas//Downloads//chromedriver_win32//chromedriver.exe");
+		// Initialize chrome Driver.
 		DRIVER = new ChromeDriver();
 
 		// Setting up report
