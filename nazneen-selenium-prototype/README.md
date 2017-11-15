@@ -11,6 +11,8 @@ And Generate Report using Extent
 
 Sample test report are attached under src/test/resources for reference.
 
+http://htmlpreview.github.io/?https://github.com/Naznee/Selenium/blob/master/nazneen-selenium-prototype/src/test/resources/GoogleExtentReport.html
+
 Prerequisites
 1. Eclipse 
 2. JDK 1.8 
